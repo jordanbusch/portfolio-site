@@ -23,3 +23,31 @@ html {
     border-radius: 10px;
     margin-top: 48px;
 }
+
+.jstag {
+    background-color: #1460A7;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 48px;
+}
+
+.htmltag {
+    background-color: #a71414;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 48px;
+}
+
+.csstag {
+    background-color: #e6c616;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 48px;
+}
+
+.uxtag {
+    background-color: #6c14a7;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 48px;
+}

@@ -20,4 +20,44 @@ body {
 
 main {
     margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    grid-template-rows: repeat(3, auto);
+    row-gap: 4rem;
+}
+
+#hero {
+    grid-column: span 12;
+    grid-row: span 1;
+}
+
+#recentProjects {
+    grid-column: span 12;
+    grid-row: span 1;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 2rem;
+    align-items: start;
+}
+
+.project {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    aspect-ratio: 12/9;
+    border: solid red;
+    border-radius: 25px;
+}
+
+#recentProjects > h2,
+#recentProjects > a {
+    grid-column: 1 / -1;
+}
+
+#skillsSection {
+    grid-column: span 12;
+    grid-row: span 1;
 }
