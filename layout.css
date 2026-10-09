@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    margin-left: 8rem;
+}
+
+#topnav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 8rem;
+}
+
+#topnav ul li {
+    list-style-type: none;
+    padding-right: 48px;
+}
+
+main {
+    margin-top: 10rem;
+}
