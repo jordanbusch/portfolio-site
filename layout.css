@@ -1,16 +1,22 @@
 header {
     display: flex;
     justify-content: space-between;
+    margin-top: 1rem;
+}
+
+header #logo {
+    display: flex;
+    align-items: center;
 }
 
 body {
-    margin-left: 8rem;
+    margin: 0 8rem;
 }
 
 #topnav ul {
     display: flex;
     justify-content: flex-end;
-    margin-right: 8rem;
+    margin-right: 10rem;
 }
 
 #topnav ul li {
@@ -21,43 +27,141 @@ body {
 main {
     margin-top: 10rem;
     display: grid;
-    grid-template-columns: repeat(12, auto);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: repeat(4, auto);
     row-gap: 4rem;
+    column-gap: 24px;
 }
 
 #hero {
-    grid-column: span 12;
+    grid-column: span 4;
     grid-row: span 1;
+}
+
+#recentProjects > h2 {
+    grid-column: 1 / -1;
+    display: grid;
 }
 
 #recentProjects {
     grid-column: span 12;
-    grid-row: span 1;
     display: grid;
-    grid-template-columns: repeat(3, minmax(220px, 1fr));
-    gap: 2rem;
-    align-items: start;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 8rem;
+}
+
+#recentProjects > a {
+    grid-column: 3 / 4;
+    justify-self: end;
 }
 
 .project {
-    align-self: flex-start;
+    border-radius: 25px;
+    aspect-ratio: 1 / 1;
+    padding: 1rem;
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    aspect-ratio: 12/9;
-    border: solid red;
-    border-radius: 25px;
+    overflow: hidden;
 }
 
-#recentProjects > h2,
-#recentProjects > a {
-    grid-column: 1 / -1;
+.project h2 {
+    margin-top: 2rem;
+    flex-basis: 100%;
+    margin-bottom: auto;
+}
+
+.project-tags {
+    align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    margin: 1rem 0 0;
+}
+
+.project-tags span {
+    margin-top: 0;
+    max-width: 100%;
+}
+
+#project1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://placehold.co/800x800?text=Project1+Image);
+    background-size: cover;
+    background-position: center;
+}
+
+#project1:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://placehold.co/800x800?text=Project1+Image);
+}
+
+#project2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://placehold.co/800x800?text=Project2+Image);
+    background-size: cover;
+    background-position: center;
+}
+
+#project2:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://placehold.co/800x800?text=Project2+Image);
+}
+
+#project3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://placehold.co/800x800?text=Project3+Image);
+    background-size: cover;
+    background-position: center;
+}
+
+#project3:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://placehold.co/800x800?text=Project3+Image);
 }
 
 #skillsSection {
     grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+#skillsSection > h2,
+#skillsSection > ul {
+    grid-column: 1 / -1;
+}
+
+#skills {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem 2rem;
+}
+
+#skills li {
+    list-style-type: none;
+    border-bottom: 1px solid #1460A7;
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+#skillsSection > a {
+    grid-column: 2 / 3;
+    justify-self: end;
+}
+
+footer {
+    grid-column: span 12;
     grid-row: span 1;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
 }
