@@ -15,12 +15,12 @@ html {
 }
 
 #name:hover {
-    color: #1460A7;
+    color: #1876CD;
     transition: color 0.15s ease;
 }
 
 .active a {
-    border-bottom: 2px solid #1460A7;
+    border-bottom: 2px solid #1876CD;
 }
 
 #hero {
@@ -29,13 +29,13 @@ html {
 }
 
 #hero h1 {
-    color: #1460A7;
+    color: #1876CD;
     font-size: 64px;
     font-weight: 400;
 }
 
 #hero a {
-    background-color: #1460A7;
+    background-color: #1876CD;
     padding: 15px 20px;
     border-radius: 10px;
     display: inline-block;
@@ -44,7 +44,7 @@ html {
 
 #hero a:hover {
     color: white;
-    background-color: #1b7cd6;
+    background-color: #1c88e0;
     transition: background-color 0.2s ease;
     transition: transform 0.2s ease;
     transform: translateY(-4px);
@@ -89,6 +89,6 @@ a {
 }
 
 a:hover {
-    color: #1460A7;
+    color: #1876CD;
     transition: color 0.15s ease;
 }
