@@ -165,3 +165,92 @@ footer {
     justify-content: space-between;
     margin: 0;
 }
+
+/* Projects Page */
+
+#projects {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+#projects .project {
+    min-width: 0;
+}
+
+#projects > h2 {
+    grid-column: 1 / -1;
+}
+
+#project4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://placehold.co/800x800?text=Project4+Image);
+    background-size: cover;
+    background-position: center;
+}
+
+#project4:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://placehold.co/800x800?text=Project4+Image);
+}
+
+#project5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://placehold.co/800x800?text=Project5+Image);
+    background-size: cover;
+    background-position: center;
+}
+
+#project5:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://placehold.co/800x800?text=Project5+Image);
+}
+
+#project6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://placehold.co/800x800?text=Project6+Image);
+    background-size: cover;
+    background-position: center;
+}
+
+#project6:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://placehold.co/800x800?text=Project6+Image);
+}
+
+#project7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://placehold.co/800x800?text=Project7+Image);
+    background-size: cover;
+    background-position: center;
+}
+
+#project7:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://placehold.co/800x800?text=Project7+Image);
+}
+
+#project8 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://placehold.co/800x800?text=Project8+Image);
+    background-size: cover;
+    background-position: center;
+}
+
+#project8:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://placehold.co/800x800?text=Project8+Image);
+}
+
+#project9 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://placehold.co/800x800?text=Project9+Image);
+    background-size: cover;
+    background-position: center;
+}
+
+#project9:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://placehold.co/800x800?text=Project9+Image);
+}
