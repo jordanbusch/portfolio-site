@@ -92,14 +92,16 @@ main {
 
 #project1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(https://placehold.co/800x800?text=Project1+Image);
+    url(japan.png);
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: left top;
 }
 
 #project1:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(https://placehold.co/800x800?text=Project1+Image);
+    url(japan.png);
+    box-shadow: 0px 0px 12px #1c88e0;
 }
 
 #project2 {
@@ -112,6 +114,7 @@ main {
 #project2:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(https://placehold.co/800x800?text=Project2+Image);
+    box-shadow: 0px 0px 12px #1c88e0;
 }
 
 #project3 {
@@ -124,6 +127,7 @@ main {
 #project3:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(https://placehold.co/800x800?text=Project3+Image);
+    box-shadow: 0px 0px 12px #1c88e0;
 }
 
 #skillsSection {
@@ -193,6 +197,7 @@ footer {
 #project4:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(https://placehold.co/800x800?text=Project4+Image);
+    box-shadow: 0px 0px 12px #1c88e0;
 }
 
 #project5 {
@@ -205,6 +210,7 @@ footer {
 #project5:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(https://placehold.co/800x800?text=Project5+Image);
+    box-shadow: 0px 0px 12px #1c88e0;
 }
 
 #project6 {
@@ -217,6 +223,7 @@ footer {
 #project6:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(https://placehold.co/800x800?text=Project6+Image);
+    box-shadow: 0px 0px 12px #1c88e0;
 }
 
 #project7 {
@@ -229,6 +236,7 @@ footer {
 #project7:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(https://placehold.co/800x800?text=Project7+Image);
+    box-shadow: 0px 0px 12px #1c88e0;
 }
 
 #project8 {
@@ -241,6 +249,7 @@ footer {
 #project8:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(https://placehold.co/800x800?text=Project8+Image);
+    box-shadow: 0px 0px 12px #1c88e0;
 }
 
 #project9 {
@@ -253,4 +262,5 @@ footer {
 #project9:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(https://placehold.co/800x800?text=Project9+Image);
+    box-shadow: 0px 0px 12px #1c88e0;
 }
