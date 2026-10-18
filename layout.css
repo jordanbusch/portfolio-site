@@ -163,10 +163,9 @@ main {
 }
 
 footer {
-    grid-column: span 12;
-    grid-row: span 1;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0;
 }
 
