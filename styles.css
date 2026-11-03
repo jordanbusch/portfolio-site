@@ -93,3 +93,8 @@ a:hover {
     color: #1876CD;
     transition: color 0.15s ease;
 }
+
+.resume #jam-filled, .resume #copernicus {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #1460A7;
+}
