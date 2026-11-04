@@ -274,3 +274,47 @@ footer {
 .resume p {
     padding: 0;
 }
+
+/* ------------------------------------------ Mobile Responsive Page ------------------------------------------ */
+
+@media (max-width: 768px) {
+
+    body {
+        margin: 0 1rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #hero {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #recentProjects,
+    #projects {
+        grid-template-columns: 1fr;
+    }
+
+    #recentProjects > a {
+        grid-column: 1 / -1;
+    }
+
+    #skills {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .resume {
+        grid-column: 1 / 5;
+    }
+}
