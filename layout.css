@@ -447,6 +447,8 @@ footer {
     }
 }
 
+/* ------------------------------------------ Tablet+Desktop Responsive Page ------------------------------------------ */
+
 @media (min-width: 769px) {
     #nav-toggle {
         display: none;
