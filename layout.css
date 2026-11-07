@@ -24,6 +24,10 @@ body {
     padding-right: 48px;
 }
 
+#nav-toggle {
+    display: none;
+}
+
 main {
     margin-top: 6rem;
     display: grid;
@@ -321,17 +325,73 @@ footer {
         margin: 0 1rem;
     }
 
-    nav {
+    header {
+        position: relative;
+        align-items: center;
+    }
+
+    #nav-toggle {
+        display: block;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    #nav-toggle img {
+        display: block;
+        width: 36px;
+        height: 36px;
+    }
+
+    #topnav {
         display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1;
+        padding: 0.5rem 1rem;
+        background-color: #0E121D;
+    }
+
+    #topnav.is-open {
+        display: block;
+    }
+
+    #topnav ul {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    #topnav ul li {
+        padding: 0;
     }
 
     #hero {
         grid-column: 1 / -1;
+        display: grid;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #experiencePage h3 {
         text-align: center;
     }
 
     #hero h1 {
         font-size: 2.5rem;
+        text-align: center;
+    }
+
+    #hero > a {
+        display: block;
+        width: fit-content;
+        justify-self: center;
+        margin-top: 1rem;
     }
 
     #recentProjects,
@@ -340,11 +400,23 @@ footer {
     }
 
     #recentProjects > a {
-        grid-column: 1 / -1;
+        display: none;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    #skillsSection > a {
+        display: none;
     }
 
     #skills {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    main > #skillsSection > #skills {
+        grid-template-columns: 1fr;
     }
 
     footer {
