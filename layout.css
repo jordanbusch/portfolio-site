@@ -446,3 +446,9 @@ footer {
         margin-top: 0;
     }
 }
+
+@media (min-width: 769px) {
+    #nav-toggle {
+        display: none;
+    }
+}
