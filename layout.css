@@ -25,7 +25,7 @@ body {
 }
 
 main {
-    margin-top: 10rem;
+    margin-top: 6rem;
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-template-rows: repeat(4, auto);
@@ -146,7 +146,7 @@ main {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0.75rem 2rem;
 }
 
@@ -264,14 +264,52 @@ footer {
     box-shadow: 0px 0px 12px #1c88e0;
 }
 
-/* ------------------------------------------ Experience Page ------------------------------------------ */
+/* ------------------------------------------ About Page ------------------------------------------ */
 
-.resume {
-    grid-row: 4;
-    grid-column: 1 / 9;
+#aboutPage > #hero {
+    grid-column: 1 / -1;
 }
 
-.resume p {
+#aboutPage > #aboutMe {
+    grid-column: 1 / 9;
+    grid-row: 2;
+}
+
+/* ------------------------------------------ Experience Page ------------------------------------------ */
+
+#experiencePage > #hero {
+    grid-column: 1 / -1;
+}
+
+#experiencePage > #workExperience {
+    grid-column: 1 / 9;
+    grid-row: 2;
+}
+
+#experiencePage > #experienceDetails {
+    grid-column: 10 / -1;
+    grid-row: 2;
+    display: grid;
+    align-content: start;
+    gap: 1.5rem;
+}
+
+#experiencePage > #experienceDetails > #education,
+#experiencePage > #experienceDetails > #skillsSection {
+    grid-column: 1 / -1;
+}
+
+#experiencePage > #experienceDetails > #skillsSection {
+    margin-top: 3rem;
+    grid-template-columns: minmax(0, 1fr);
+    align-content: start;
+}
+
+#experiencePage > #experienceDetails > #skillsSection > #skills {
+    grid-template-columns: 1fr;
+}
+
+#workExperience .resume p {
     padding: 0;
 }
 
@@ -306,7 +344,7 @@ footer {
     }
 
     #skills {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     footer {
@@ -314,7 +352,25 @@ footer {
         text-align: center;
     }
 
-    .resume {
-        grid-column: 1 / 5;
+    /* ------------------------------------------ About Page ------------------------------------------ */
+
+    #aboutPage > #aboutMe {
+        grid-column: 1 / -1;
+    }
+
+    /* ------------------------------------------ Experience Page ------------------------------------------ */
+
+    #experiencePage > #workExperience {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    #experiencePage > #experienceDetails {
+        grid-column: 1 / -1;
+        grid-row: 3;
+    }
+
+    #experiencePage > #experienceDetails > #skillsSection {
+        margin-top: 0;
     }
 }
