@@ -54,6 +54,10 @@ main {
     grid-row: span 1;
 }
 
+#hero.projectHero {
+    grid-column: span 6;
+}
+
 #recentProjects > h2 {
     grid-column: 1 / -1;
     display: grid;
@@ -67,7 +71,7 @@ main {
     margin-top: 8rem;
 }
 
-#recentProjects > a {
+#recentProjects > a:not(.project) {
     grid-column: 3 / 4;
     justify-self: end;
 }
@@ -108,7 +112,7 @@ main {
 
 #project1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(japan.png);
+    url(./mocksite/japan.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left top;
@@ -116,21 +120,30 @@ main {
 
 #project1:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(japan.png);
+    url(./mocksite/japan.png);
     box-shadow: 0px 0px 12px #1c88e0;
+}
+
+#project1:hover > * {
+    display: none;
 }
 
 #project2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(simpack.png);
+    url(./mtgtoolbox/simpack.png);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #project2:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(simpack.png);
+    url(./mtgtoolbox/simpack.png);
     box-shadow: 0px 0px 12px #1c88e0;
+}
+
+#project2:hover > * {
+    display: none;
 }
 
 #project3 {
@@ -138,6 +151,7 @@ main {
     url(https://placehold.co/800x800?text=Project3+Image);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #project3:hover {
@@ -212,6 +226,7 @@ footer {
     url(https://placehold.co/800x800?text=Project4+Image);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #project4:hover {
@@ -225,6 +240,7 @@ footer {
     url(https://placehold.co/800x800?text=Project5+Image);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #project5:hover {
@@ -238,6 +254,7 @@ footer {
     url(https://placehold.co/800x800?text=Project6+Image);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #project6:hover {
@@ -251,6 +268,7 @@ footer {
     url(https://placehold.co/800x800?text=Project7+Image);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #project7:hover {
@@ -264,6 +282,7 @@ footer {
     url(https://placehold.co/800x800?text=Project8+Image);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #project8:hover {
@@ -277,12 +296,21 @@ footer {
     url(https://placehold.co/800x800?text=Project9+Image);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;   
 }
 
 #project9:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(https://placehold.co/800x800?text=Project9+Image);
     box-shadow: 0px 0px 12px #1c88e0;
+}
+
+/* ------------------------------------------ Specific Project Images ------------------------------------------ */
+
+.projectImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 /* ------------------------------------------ About Page ------------------------------------------ */
@@ -345,6 +373,15 @@ footer {
         margin: 0 1rem;
     }
 
+    main.projectDetail {
+        grid-template-columns: minmax(0, 1fr);
+        column-gap: 0;
+    }
+
+    main.projectDetail > #recentProjects {
+        grid-column: 1 / -1;
+    }
+
     header {
         position: relative;
         align-items: center;
@@ -399,6 +436,15 @@ footer {
         display: grid;
     }
 
+    #hero.projectHero {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    #hero.projectHero p {
+        text-align: left;
+    }
+
     h2 {
         text-align: center;
     }
@@ -424,7 +470,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    #recentProjects > a {
+    #recentProjects > a:not(.project) {
         display: none;
     }
 
@@ -447,6 +493,10 @@ footer {
     footer {
         flex-direction: column-reverse;
         text-align: center;
+    }
+
+    #links {
+        gap: 1.5rem;
     }
 
     /* ------------------------------------------ About Page ------------------------------------------ */

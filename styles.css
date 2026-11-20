@@ -98,3 +98,9 @@ a:hover {
     padding-bottom: 10px;
     border-bottom: 1px solid #1460A7;
 }
+
+@media (max-width: 768px) {
+    #hero.projectHero h1 {
+        font-size: 2rem;
+    }
+}
