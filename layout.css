@@ -350,6 +350,10 @@ footer {
         align-items: center;
     }
 
+    #mobile-nav {
+        position: relative;
+    }
+
     #nav-toggle {
         display: block;
         padding: 0;
@@ -374,7 +378,8 @@ footer {
         background-color: #0E121D;
     }
 
-    #topnav.is-open {
+    #mobile-nav:hover #topnav,
+    #mobile-nav:focus-within #topnav {
         display: block;
     }
 
